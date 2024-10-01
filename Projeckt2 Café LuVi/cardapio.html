@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Café LuVi</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.jpg" />
+        <!-- Bootstrap icons -->
+        <link href="assets/Mouse.png" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap) -->
+        <link href="css/styles.css" rel="stylesheet" />
+
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="color: white;">
+            <div class="container px-4 px-lg-5">
+                <img src="assets/img/ProjetoLuVi Logo.png" alt="Logo" height="30" class="me-2">
+                <a class="navbar-brand" href="#!" style="color: white;">Café LuVi</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item active"><a class="nav-link" href="index.html" style="color: white;">Página Inicial</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nossa-historia.html" style="color: white;">Nossa História</a></li>
+                        <li class="nav-item"><a class="nav-link" href="filiais.html" style="color: white;">Filiais</a></li>
+                        <li class="nav-item dropdown">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        
+        <!-- Header-->
+        <header class="bg-dark py-5" style="background-image: url('assets/img/Caffe.png'); background-size: cover; background-position: center;">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Menu: Cafeteria</h1>
+                    <p class="lead fw-normal text-white-50 mb-0"></p>
+                </div>
+            </div>
+        </header>
+
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const products = document.querySelectorAll('.row .col.slide-up'); // Seleciona todos os produtos com a classe slide-up
+                products.forEach((product, index) => {
+                    setTimeout(() => {
+                        product.classList.add('slide-up');
+                    }, index * 1000); // Adiciona um atraso de 1 segundo entre os produtos
+                });
+            });
+        </script>
+        
+
+        <!-- Section Cafeteria-->
+ 
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <!-- Produto 1 -->
+                    <div class="col mb-5 slide-up">
+                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#cafeteriaProductModal1">
+                            <img class="card-img-top" src="assets/Cafeteria/Cortado.jpg" alt="Corte de Café" />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder">Corte de Café</h5>
+                                    R$10,00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Produto 2 -->
+                    <div class="col mb-5 slide-up">
+                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#cafeteriaProductModal2">
+                            <img class="card-img-top" src="assets/Cafeteria/MatchaLatte.jpg" alt="Matcha Latte" />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder">Latte Sereno</h5>
+                                    R$ 14,00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Produto 3 -->
+                    <div class="col mb-5 slide-up">
+                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#cafeteriaProductModal3">
+                            <img class="card-img-top" src="assets/Cafeteria/Mocha.jpg" alt="Mocha" />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder">Mocha Encantado</h5>
+                                    R$ 12,00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Produto 4 -->
+                    <div class="col mb-5 slide-up">
+                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#cafeteriaProductModal4">
+                            <img class="card-img-top" src="assets/Cafeteria/Chá de Hibisco.jpg" alt="Chá de Hibisco" />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder">Jardim de Hibisco</h5>
+                                    R$ 9,00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Produto 5 -->
+                    <div class="col mb-5 slide-up">
+                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#cafeteriaProductModal5">
+                            <img class="card-img-top" src="assets/Cafeteria/Café Gelado.jpg" alt="Café Gelado" />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder">Gelado do Barista</h5>
+                                    R$ 11,00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Produto 6 -->
+                    <div class="col mb-5 slide-up">
+                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#cafeteriaProductModal6">
+                            <img class="card-img-top" src="assets/Cafeteria/Flat White.jpg" alt="Flat White" />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder">Café Nuvem</h5>
+                                    R$ 13,00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Produto 7 -->
+                    <div class="col mb-5 slide-up">
+                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#cafeteriaProductModal7">
+                            <img class="card-img-top" src="assets/Cafeteria/Frappuccino.jpg" alt="Frappuccino" />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder">Gelado Cremoso</h5>
+                                    R$ 15,00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Produto 8 -->
+                    <div class="col mb-5 slide-up">
+                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#cafeteriaProductModal8">
+                            <img class="card-img-top" src="assets/Cafeteria/Café Latte.jpg" alt="Café Latte" />
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder">Creme de Café</h5>
+                                    R$ 11,50
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+        
+        
+    <!-- Modal Produto 1 - Cafeteria -->
+<div class="modal fade" id="cafeteriaProductModal1" tabindex="-1" aria-labelledby="cafeteriaProductModalLabel1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cafeteriaProductModalLabel1">Corte de Café</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img class="img-fluid mb-3" src="assets/Cafeteria/Cortado.jpg" alt="Corte de Café" />
+                <p>Descrição: Espresso com uma pequena quantidade de leite vaporizado, perfeito para quem prefere um café mais concentrado, mas suavizado pelo toque do leite.</p>
+                <p>Preço: R$ 10,00</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Produto 2 - Cafeteria -->
+<div class="modal fade" id="cafeteriaProductModal2" tabindex="-1" aria-labelledby="cafeteriaProductModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cafeteriaProductModalLabel2">Matcha Latte</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img class="img-fluid mb-3" src="assets/Cafeteria/MatchaLatte.jpg" alt="Expresso" />
+                <p>Descrição: Uma mistura clássica de espresso com uma generosa dose de leite vaporizado e uma fina camada de espuma, ideal para quem gosta de suavidade no café.</p>
+                <p>Preço: R$ 8,00</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Produto 3 - Cafeteria -->
+<div class="modal fade" id="cafeteriaProductModal3" tabindex="-1" aria-labelledby="cafeteriaProductModalLabel3" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cafeteriaProductModalLabel3">Mocha</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img class="img-fluid mb-3" src="assets/Cafeteria/Mocha.jpg" alt="Macchiato" />
+                <p>Descrição:Uma deliciosa combinação de espresso, leite vaporizado e calda de chocolate. Finalizado com chantilly e uma leve pitada de cacau em pó.</p>
+                <p>Preço: R$ 12,00</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Produto 4 - Cafeteria -->
+<div class="modal fade" id="cafeteriaProductModal4" tabindex="-1" aria-labelledby="cafeteriaProductModalLabel4" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cafeteriaProductModalLabel4">Chá de Hibisco</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img class="img-fluid mb-3" src="assets/Cafeteria/Chá de Hibisco.jpg" alt="Café com Leite" />
+                <p>Descrição: Chá de flores de hibisco, servido quente ou gelado, com um toque levemente adocicado e ácido. Refrescante e aromático, ótimo para uma pausa leve. </p>
+                <p>Preço: R$ 14,00</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Produto 5 - Cafeteria -->
+<div class="modal fade" id="cafeteriaProductModal5" tabindex="-1" aria-labelledby="cafeteriaProductModalLabel5" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cafeteriaProductModalLabel5">Gelado do Barista</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img class="img-fluid mb-3" src="assets/Cafeteria/Café Gelado.jpg" alt="Café Americano" />
+                <p>Descrição: Espresso duplo servido com gelo e leite vaporizado, criando uma combinação refrescante de café com um toque cremoso.</p>
+                <p>Preço: R$ 9,00</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Produto 6 - Cafeteria -->
+<div class="modal fade" id="cafeteriaProductModal6" tabindex="-1" aria-labelledby="cafeteriaProductModalLabel6" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cafeteriaProductModalLabel6">Flat White</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img class="img-fluid mb-3" src="assets/Cafeteria/Flat White.jpg" alt="Latte" />
+                <p>Descrição: Uma bebida suave que equilibra perfeitamente espresso e leite vaporizado, com uma fina camada de microespuma.</p>
+                <p>Preço: R$ 16,00</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Produto 7 - Cafeteria -->
+<div class="modal fade" id="cafeteriaProductModal7" tabindex="-1" aria-labelledby="cafeteriaProductModalLabel7" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cafeteriaProductModalLabel7">Frappuccino</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img class="img-fluid mb-3" src="assets/Cafeteria/Frappuccino.jpg" alt="Cappuccino" />
+                <p>Descrição:  Café batido com gelo, leite e creme, finalizado com chantilly e uma calda de chocolate ou caramelo. Um deleite gelado perfeito para dias quentes.</p>
+                <p>Preço: R$ 18,00</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Produto 8 - Cafeteria -->
+<div class="modal fade" id="cafeteriaProductModal8" tabindex="-1" aria-labelledby="cafeteriaProductModalLabel8" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cafeteriaProductModalLabel8">Café Latte</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img class="img-fluid mb-3" src="assets/Cafeteria/Café Latte.jpg" alt="Mocha" />
+                <p>Descrição: Café expresso misturado com chocolate quente e leite vaporizado, finalizado com chantilly.</p>
+                <p>Preço: R$ 22,00</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+               <!-- Header-->
+               <header class="bg-dark py-5" style="background-image: url('assets/img/Bakes.webp'); background-size: cover; background-position: center;">
+                <div class="container px-4 px-lg-5 my-5">
+                    <div class="text-center text-white">
+                        <h1 class="display-4 fw-bolder">Menu: Confeitaria</h1>
+                        <p class="lead fw-normal text-white-50 mb-0"></p>
+                    </div>
+                </div>
+            </header>        
+            <!-- Section-->
+            <section class="py-5">
+                <div class="container px-4 px-lg-5 mt-5">
+                    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                        
+                        <!-- Produto 1 -->
+                        <div class="col mb-5">
+                            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#productModal1">
+                                <img class="card-img-top" src="assets/Confeitaria/Brigadeiro.jpg" alt="Fancy Product 1" />
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <h5 class="fw-bolder">Brigadeiro</h5>
+                                        Unidade - R$: 3,50<br><br>
+                                        Caixa com 6 Unidade - R$: 18,00
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+          
+                        <!-- Produto 2 -->
+                        <div class="col mb-5">
+                            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#productModal2">
+                                <img class="card-img-top" src="assets/Confeitaria/Cheesecake de Frutas Vermelhas.jpg" alt="Fancy Product 2" />
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <h5 class="fw-bolder">Cheesecake de Frutas Vermelhas</h5>
+                                        Unidade - R$: 12,00<br><br>
+                                        Caixa com 6 Unidade -  R$ 80,00
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Produto 3 -->
+                        <div class="col mb-5">
+                            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#productModal3">
+                                <img class="card-img-top" src="assets/Confeitaria/Eclair de Café.jpg" alt="Fancy Product 3" />
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <h5 class="fw-bolder">Eclair de Café</h5>
+                                        R$ 8,00
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Produto 4 -->
+                        <div class="col mb-5">
+                            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#productModal4">
+                                <img class="card-img-top" src="assets/Confeitaria/Muffin de Blueberry.jpg" alt="Fancy Product 4" />
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <h5 class="fw-bolder">Muffin de Blueberry</h5>
+                                        R$ 6,00
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Produto 5 -->
+                        <div class="col mb-5">
+                            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#productModal5">
+                                <img class="card-img-top" src="assets/Confeitaria/Pain au Chocolat.jpg" alt="Fancy Product 5" />
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <h5 class="fw-bolder">Pain au Chocolat</h5>
+                                        R$ 8,00
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Produto 6 -->
+                        <div class="col mb-5">
+                            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#productModal6">
+                                <img class="card-img-top" src="assets/Confeitaria/Pastel de Nata.jpg" alt="Fancy Product 6" />
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <h5 class="fw-bolder">Pastel de Nata</h5>
+                                        R$ 5,00
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Produto 7 -->
+                        <div class="col mb-5">
+                            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#productModal7">
+                                <img class="card-img-top" src="assets/Confeitaria/Quiche de Espinafre.jpg" alt="Fancy Product 5" />
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <h5 class="fw-bolder">Quiche de Espinafre</h5>
+                                        Unidade - R$: 12,00<br><br>
+                                        Caixa com 6 Unidade -  R$ 80,00
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Produto 8 -->
+                        <div class="col mb-5">
+                            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#productModal8">
+                                <img class="card-img-top" src="assets/Confeitaria/Torta de Limão.jpg" alt="Fancy Product 5" />
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <h5 class="fw-bolder">Torta de Limão</h5>
+                                        Unidade - R$: 10,00<br><br>
+                                        Caixa com 6 Unidade -  R$ 70,00
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Modais de Produtos -->
+
+<!-- Modal Produto 1 -->
+<div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel1">Brigadeiro</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img class="img-fluid mb-3" src="assets/Confeitaria/Brigadeiro.jpg" alt="Brigadeiro" />
+                <p>Descrição: Delicioso brigadeiro feito com leite condensado e chocolate, coberto com granulado de chocolate. Ideal para festas e sobremesas.</p>
+                <p>Unidade - R$: 3,50<br>Caixa com 6 Unidade - R$: 18,00</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+            
+            <!-- Modal Produto 2 -->
+            <div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModalLabel2" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="productModalLabel2">Frutas Vermelhas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-fluid mb-3" src="assets/Confeitaria/Cheesecake de Frutas Vermelhas.jpg" alt="Fancy Product 2" />
+                            <p>Descrição: Cheesecake cremoso com base de biscoito amanteigado, coberto com uma calda de frutas vermelhas frescas e decorado com frutas da estação. </p>
+                            <p>Unidade - R$: 12,00<br>Caixa com 6 Unidades - R$: 80,00</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal Produto 3 -->
+            <div class="modal fade" id="productModal3" tabindex="-1" aria-labelledby="productModalLabel3" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="productModalLabel3">Eclair de Café</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-fluid mb-3" src="assets/Confeitaria/Eclair de Café.jpg" alt="Fancy Product 3" />
+                            <p>Descrição: Massa choux recheada com um creme suave de café e coberta com uma fina camada de glacê de café, combinando leveza e intensidade.</p>
+                            <p>Preço: R$ 8,00</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal Produto 4 -->
+            <div class="modal fade" id="productModal4" tabindex="-1" aria-labelledby="productModalLabel4" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="productModalLabel4">Muffin de Blueberry</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-fluid mb-3" src="assets/Confeitaria/Muffin de Blueberry.jpg" alt="Fancy Product 4" />
+                            <p>Descrição:Muffin macio e fofinho, repleto de blueberries frescas, com uma cobertura crocante de açúcar. Ideal para um lanche da tarde.</p>
+                            <p>Preço: R$ 6,00</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal Produto 5 -->
+            <div class="modal fade" id="productModal5" tabindex="-1" aria-labelledby="productModalLabel5" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="productModalLabel5">Pain au Chocolat</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-fluid mb-3" src="assets/Confeitaria/Pain au Chocolat.jpg" alt="Fancy Product 5" />
+                            <p>Descrição: Massa folhada leve e crocante, recheada com barras de chocolate amargo derretido. Um clássico francês perfeito para acompanhar um café.</p>
+                            <p>Preço: R$ 8,00</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal Produto 6 -->
+            <div class="modal fade" id="productModal6" tabindex="-1" aria-labelledby="productModalLabel6" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="productModalLabel6">Pastel de Nata</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-fluid mb-3" src="assets/Confeitaria/Pastel de Nata.jpg" alt="Fancy Product 6" />
+                            <p>Descrição: Tradicional doce português com uma massa folhada leve e crocante, recheada com creme de ovos levemente caramelizado.</p>
+                            <p>Preço: R$: 5.00</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Modal Produto 7 -->
+            <div class="modal fade" id="productModal7" tabindex="-1" aria-labelledby="productModalLabel7" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="productModalLabel7">Quiche de Espinafre</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-fluid mb-3" src="assets/Confeitaria/Quiche de Espinafre.jpg" alt="Fancy Product 7" />
+                            <p>Descrição: Quiche feita com massa crocante e recheio cremoso de espinafre e queijo, perfeita para um lanche salgado.</p>
+                            <p>Preço (pedaço): R$ 12,00<br>Preço (inteiro): R$ 80,00</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal Produto 7 -->
+            <div class="modal fade" id="productModal8" tabindex="-1" aria-labelledby="productModalLabel8" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="productModalLabel8">Torta de Limão</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-fluid mb-3" src="assets/Confeitaria/Torta de Limão.jpg" alt="Fancy Product 8" />
+                            <p>Descrição: Massa crocante de biscoito, recheada com creme de limão siciliano e finalizada com merengue dourado. Um equilíbrio perfeito entre doce e azedo.</p>
+                            <p>Preço (unidade): $10.00<br> Preço (inteiro) $70.00</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">LuVi&copy;INC</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
